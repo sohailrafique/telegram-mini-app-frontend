@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* Timer */
+.timer {
+    position: absolute;
+    top: 10%;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer span {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.timer-bar {
+    width: 5px;
+    height: 100px;
+    background-color: #f4a300;
+}
+
+/* Game Section: Hands and Round Status */
+.game-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.round-status {
+    font-size: 36px;
+    color: black;
+    margin: 20px 0;
+}
+
+.hand-img {
+    width: 100px;
+    height: auto;
+}
+
+/* Avatars */
+.avatars {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opponent-avatar img,
+.player-avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+}
+
+.action-btn img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+/* Game End Popup */
+.game-end-popup {
+    position: absolute;
+    bottom: 20%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    display: none; /* Hide initially */
+}
+
+
+/* Win Panel */
+.win-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.win-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.points {
+    font-size: 24px;
+    color: #f4a300;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.final-score {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Popup Action Buttons */
+.popup-action-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.popup-action-buttons .action-btn {
+    background-color: #F4A300;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.popup-action-buttons .action-btn img {
+    width: 25px;
+    height: 25px;
+} 
+

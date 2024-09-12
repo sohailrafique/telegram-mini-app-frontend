@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Round Won</title>
+    <link rel="stylesheet" href="css/round_won.css" />
+  </head>
+  <body>
+    <div class="container round-won-screen">
+      <!-- Timer -->
+      <div class="timer">
+        <span>0:03</span>
+        <div class="timer-bar"></div>
+      </div>
+
+      <!-- Hands and Round Status -->
+      <div class="game-section">
+        <div class="top-hand">
+          <img src="images/scissors.png" alt="Scissors" class="hand-img" />
+        </div>
+        <h1 class="round-status">Round Won!</h1>
+        <div class="bottom-hand">
+          <img src="images/rock.png" alt="Rock" class="hand-img" />
+        </div>
+      </div>
+
+      <!-- Avatars -->
+      <div class="avatars">
+        <div class="opponent-avatar">
+          <img src="images/jane_doe.png" alt="Opponent" />
+        </div>
+        <div class="player-avatar">
+          <img src="images/you.png" alt="You" />
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button class="action-btn rock">
+          <img src="images/rock-icon.png" alt="Rock" />
+          Rock
+        </button>
+        <button class="action-btn paper">
+          <img src="images/paper-icon.png" alt="Paper" />
+          Paper
+        </button>
+        <button class="action-btn random">
+          <img src="images/rock-icon.png" alt="Random" />
+          Random
+        </button>
+        <button class="action-btn scissor">
+          <img src="images/scissors-icon.png" alt="Scissors" />
+          Scissors
+        </button>
+      </div>
+
+      <!-- Game End Popup -->
+      <div class="game-end-popup" id="gameEndPopup">
+        <div class="win-panel">
+          <img src="images/you.png" alt="You" class="player-avatar" />
+          <div class="win-info">
+            <span class="points">+ 150</span>
+            <h2>You Win</h2>
+            <span class="final-score">3 - 1</span>
+          </div>
+        </div>
+
+        <!-- Popup Action Buttons -->
+        <div class="popup-action-buttons">
+          <button class="action-btn home">
+            <img src="images/home-icon.png" alt="Home" />
+          </button>
+          <button class="action-btn replay">
+            <img src="images/replay-icon.png" alt="Replay" />
+          </button>
+          <button class="action-btn next">
+            <img src="images/next-icon.png" alt="Next" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Button to Open Popup for Testing -->
+      <button class="open-popup-btn" onclick="openPopup()">End Game</button>
+    </div>
+
+    <!-- JavaScript to Control Popup -->
+    <script>
+      function openPopup() {
+        document.getElementById("gameEndPopup").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
