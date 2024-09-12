@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* Final Move Hand */
+.top-hand {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hand-img {
+    width: 150px;
+    height: auto;
+}
+
+/* Win Panel */
+.win-panel {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.player-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.win-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.points {
+    font-size: 24px;
+    color: #f4a300;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.final-score {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.action-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.home img {
+    background-color: #F4A300;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.replay img {
+    background-color: #F4A300;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.next img {
+    background-color: #F4A300;
+    padding: 10px;
+    border-radius: 50%;
+}
